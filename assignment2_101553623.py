@@ -213,7 +213,6 @@ if __name__ == "__main__":
             print("Invalid input. Please enter a valid integer.")
 
 
-
     scanner = PortScanner(target_ip)
     print(f"Scanning {target_ip} from port {start_port} to {end_port}...")
     scanner.scan_range(start_port, end_port)
@@ -230,6 +229,8 @@ if __name__ == "__main__":
     see_history = input("\nWould you like to see past scan history? (yes/no): ").strip().lower()
     if see_history == "yes":
         load_past_scans()
+
+
 
 # Q5: New Feature Proposal
 # Diagram: See diagram_studentID.png in the repository root
